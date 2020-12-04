@@ -1,0 +1,35 @@
+<!-- selectors in css2 -->
+<!-- 1. - id - #
+2. - class - .
+3. -  (Universal Selector) - * -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one , .three
+        {
+            color:red!important;
+        }
+        #two{
+            color:green;
+        }
+        *{
+            color:blue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div>
+        <h2 class="one">heading 1</h2>
+        <h2 id="two" class="one">heading 2</h2>
+        <h2>heading 3</h2>
+        <h2 class="three">heading 4</h2>
+        <h2>heading 5</h2>
+    </div>
+</body>
+</html>

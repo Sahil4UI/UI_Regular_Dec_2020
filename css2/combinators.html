@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child h2{
+            color: blue;
+        }
+        /* >- immediate child */
+        #parent > h2{
+            color:red;
+        }
+        /* + - immediate sibling */
+        #parent ~ h2{
+            color:chartreuse;
+        }
+        /* ~ - all sublings */
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h2>pchild</h2>
+        <h2>pchild</h2>
+        <h2>pchild</h2>
+        <h2>pchild</h2>
+        <div class="child">
+            <h2>cchild</h2>
+            <h2>cchild</h2>
+            <h2>cchild</h2>
+            <h2>cchild</h2>
+        </div>
+    </div>
+    <hr>
+    <h2>i am outside h2</h2>
+    <h2>i am outside h2</h2>
+    <h2>i am outside h2</h2>
+
+</body>
+</html>
