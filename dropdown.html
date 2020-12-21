@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul:not(.dropdown) li {
+            position: relative;
+        }
+        
+        .dropdown {
+            position: absolute;
+            display: none;
+            /* bottom: 0; */
+        }
+        
+        ul:not(.dropdown) li a:hover~.dropdown {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a href="#">Mobile</a>
+            <ul class="dropdown">
+                <li>
+                    <a href="#">Apple</a>
+                </li>
+                <li>
+                    <a href="#">mi</a>
+                </li>
+                <li>
+                    <a href="#">LG</a>
+                </li>
+                <li>
+                    <a href="#">ASUS</a>
+                </li>
+                <li>
+                    <a href="#">google nexus</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>
