@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: black;
+            color: #fff;
+            margin: 5px;
+            text-decoration: none;
+            border-radius: 12px;
+        }
+        
+        #login {
+            display: none;
+        }
+        
+        #login:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Target Selector</h1>
+    <a href="#login">login Now</a>
+
+    <div id="login">
+        <a href="#">Close</a>
+        <form action="loginDemo.html">
+            <table>
+                <tr>
+                    <td>
+                        <label for="username">Name</label>
+                    </td>
+                    <td>
+                        <input type="text" name="" readonly id="username" placeholder="Enter Your Name:" required title="Enter Usernamr">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="psw">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" value="ram1234" name="" id="psw" placeholder="Enter Password" required title="Enter Password">
+                        <tr>
+                            <td>
+                                <button type="submit">LOGIN</button>
+                            </td>
+                            <td>
+                                <button type="reset">CLEAR</button>
+                            </td>
+                        </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
