@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #cube {
+            width: 300px;
+            height: 300px;
+            margin: 200px auto 0 auto;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: 10s cube linear infinite;
+        }
+        
+        #cube>div {
+            width: inherit;
+            height: inherit;
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 1px solid red;
+            font-size: 40px;
+            font-weight: 800;
+            position: absolute;
+        }
+        
+        #cube:hover {
+            animation-play-state: paused;
+        }
+        
+        @keyframes cube {
+            0% {
+                transform: rotate3d(0, 0, 0, 0deg);
+            }
+            100% {
+                transform: rotate3d(1, 1, 1, 360deg);
+            }
+        }
+        
+        #left {
+            transform-origin: left;
+            transform: rotateY(90deg);
+        }
+        
+        #right {
+            transform-origin: right;
+            transform: rotateY(-90deg);
+        }
+        
+        #top {
+            transform-origin: top;
+            transform: rotateX(-90deg);
+        }
+        
+        #bottom {
+            transform-origin: bottom;
+            transform: rotateX(90deg);
+        }
+        
+        #back {
+            transform: translateZ(-300px);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="cube">
+        <div id="front">FRONT</div>
+        <div id="back">BACK</div>
+        <div id="left">LEFT</div>
+        <div id="right">RIGHT</div>
+        <div id="top">TOP</div>
+        <div id="bottom">BOTTOM</div>
+    </div>
+</body>
+
+</html>
