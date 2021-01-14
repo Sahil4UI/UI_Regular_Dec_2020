@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            padding: 15px;
+            background-color: #000;
+        }
+        
+        header h1 {
+            margin: 0px;
+            color: #fff;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        li a {
+            display: block;
+            padding: 10px 8px;
+            color: #fff;
+        }
+        
+        .btn {
+            display: none;
+            align-self: center;
+        }
+        
+        .btn {
+            height: 80px;
+            width: 60px;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+        }
+        
+        .btn span {
+            display: block;
+            height: 5px;
+            width: 100%;
+            margin: 16px 0px;
+            background-color: #fff;
+        }
+        
+        @media (max-width:768px) {
+            ul {
+                display: none;
+            }
+            .btn {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-1">
+                <h1>LOGO</h1>
+            </div>
+            <div class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="col-2">
+                <ul>
+                    <li>
+                        <a href="#">Men</a>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                    </li>
+                    <li>
+                        <a href="#">Kids</a>
+                    </li>
+                    <li>
+                        <a href="#">Electronics</a>
+                    </li>
+                    <li>
+                        <a href="#">Lifestyle</a>
+                    </li>
+                    <li>
+                        <a href="#">Games</a>
+                    </li>
+                    <li>
+                        <a href="#">Entertainment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+</body>
+
+</html>

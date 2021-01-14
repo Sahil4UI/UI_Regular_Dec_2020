@@ -1,0 +1,60 @@
+    #parent {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 30px;
+    }
+    
+    .col {
+        border: 2px solid red;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    
+    li {
+        height: 200px;
+        border: 2px solid red;
+        width: 20%;
+        background-color: antiquewhite;
+    }
+    
+    @media(max-width:1200px) {
+        body {
+            background-color: yellow;
+        }
+        li {
+            width: 20%;
+        }
+    }
+    
+    @media(max-width:992px) {
+        body {
+            background-color: pink;
+        }
+        li {
+            width: 30%;
+        }
+    }
+    
+    @media(max-width:576px) {
+        body {
+            background-color: tomato;
+        }
+        li {
+            width: 100%;
+            display: block;
+        }
+    }
+    /* breakPoints */
+    /* 1200px>-extra large */
+    /* 992px>large */
+    /* 768px>- medium */
+    /* 576px-small */
