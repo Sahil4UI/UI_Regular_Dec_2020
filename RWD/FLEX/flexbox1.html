@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header {
+            background-color: bisque;
+        }
+        
+        ul {
+            display: flex;
+            list-style-type: none;
+            width: 100%;
+            /* justify-content: space-between; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            justify-content: evenly;
+        }
+        
+        ul li {
+            padding: 20px;
+            border: 1px solid red;
+            background-color: yellow;
+        }
+        
+        .row {
+            display: flex;
+        }
+        
+        .col1 {
+            width: 20%;
+        }
+        
+        .col2 {
+            width: 50%;
+        }
+    </style>
+
+    <body>
+        <header>
+            <div class="row">
+                <div class="col1">
+                    <div class="logo">
+                        <h1>LOGO</h1>
+                    </div>
+                </div>
+                <div class="col2">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Item1</a></li>
+                            <li><a href="#">Item2</a></li>
+                            <li><a href="#">Item3</a></li>
+                            <li><a href="#">Item4</a></li>
+                            <li><a href="#">Item5</a></li>
+                            <li><a href="#">Item6</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </body>
+
+</html>

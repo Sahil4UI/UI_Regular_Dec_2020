@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+        
+        header {
+            position: relative;
+            padding: 15px;
+            background-color: #000;
+        }
+        
+        header h1 {
+            margin: 0px;
+            color: #fff;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        li a {
+            display: block;
+            padding: 10px 8px;
+            color: #fff;
+        }
+        
+        .btn {
+            display: none;
+            align-self: center;
+        }
+        
+        .btn {
+            border: 2px solid #fff;
+            background-color: #000;
+        }
+        
+        .btn span {
+            display: block;
+            height: 5px;
+            width: 100%;
+            margin: 8px 0px;
+            background-color: #fff;
+        }
+        
+        .btn,
+        input[type="checkbox"] {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            display: block;
+            padding: 8px;
+        }
+        
+        input[type="checkbox"] {
+            z-index: 1000;
+            opacity: 0;
+        }
+        
+        @media (max-width:768px) {
+            .col-2 {
+                display: none;
+            }
+            .col-2 {
+                position: absolute;
+                top: 200px;
+            }
+            .btn {
+                display: block;
+            }
+            input[type="checkbox"]:checked~.col-2 {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="col-1">
+                <h1>LOGO</h1>
+            </div>
+
+            <div class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <input type="checkbox">
+
+
+            <div class="col-2">
+                <ul>
+                    <li>
+                        <a href="#">Men</a>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                    </li>
+                    <li>
+                        <a href="#">Kids</a>
+                    </li>
+                    <li>
+                        <a href="#">Electronics</a>
+                    </li>
+                    <li>
+                        <a href="#">Lifestyle</a>
+                    </li>
+                    <li>
+                        <a href="#">Games</a>
+                    </li>
+                    <li>
+                        <a href="#">Entertainment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+</body>
+
+</html>
